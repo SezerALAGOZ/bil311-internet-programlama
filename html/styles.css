@@ -1,0 +1,22 @@
+#form {
+    border: 1px dashed rgb(61, 58, 58);
+    width: 400px;
+    background-color: burlywood;
+    padding-left: 10px;
+}
+
+#form > label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#form > input {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#form > input:hover {
+    background-color: aquamarine;
+}
