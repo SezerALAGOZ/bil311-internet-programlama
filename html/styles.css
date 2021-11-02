@@ -1,22 +1,40 @@
-#form {
-    border: 1px dashed rgb(61, 58, 58);
-    width: 400px;
-    background-color: burlywood;
-    padding-left: 10px;
+#table {
+    margin: auto;
+    width: 600px;
+    margin-top: 100px;
+    border-collapse: collapse;
 }
 
-#form > label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
+#table  thead {
+    background-color: #FF5653;
+    color: #FFF;
+    border: 1px solid red;
 }
 
-#form > input {
-    display: block;
-    margin-top: 10px;
-    padding: 5px;
+th {
+    padding: 20px;
+    border-right: 1px solid black;
+    text-align: center;
 }
-
-#form > input:hover {
+th:hover {
     background-color: aquamarine;
+}
+
+#table tbody {
+    border: 1px solid black;
+}
+#table tbody tr td {
+    border: 1px solid black;
+    text-align: center;
+}
+#table tbody tr:first-of-type {
+    border: 1px solid blue;
+    text-align: center;
+}
+#table tbody tr:first-of-type:first-child:hover {
+    background-color: #d7ec5c;
+}
+
+ul {
+    list-style-type: none;
 }
