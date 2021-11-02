@@ -6,26 +6,29 @@
 }
 
 #table  thead {
-    background-color: #FF5653;
+    background-color: #725252;
     color: #FFF;
-    border: 1px solid red;
 }
 
 th {
     padding: 20px;
     border-right: 1px solid black;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 2px;
 }
 th:hover {
-    background-color: aquamarine;
+    background-color: rgb(122, 187, 165);
 }
 
 #table tbody {
     border: 1px solid black;
+    font-family: 'Permanent Marker', cursive;
 }
 #table tbody tr td {
     border: 1px solid black;
     text-align: center;
+    padding: 10px;
 }
 #table tbody tr:first-of-type {
     border: 1px solid blue;
