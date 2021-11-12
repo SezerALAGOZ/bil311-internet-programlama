@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -185,4 +186,49 @@ nav {
 .favorite {
     color: red;
     font-size: 2em;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(56, 56, 99);
+    margin-top: 20vh;
+    color: #fff;
+    border: 1px solid #000;
+}
+#footer-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#social-media-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+.social-icon a {
+    margin-right: 0.5em;
+    color: rgb(192, 187, 187);
+}
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+.fa-instagram-square:hover {
+    color: #8a3ab9;
+}
+.fa-twitter-square:hover {
+    color: #1DA1F2;
+}
+.fa-google-plus-square:hover {
+    color: #d6ca21;
+}
+.fa-pinterest-square:hover {
+    color: #b31d1d;
+}
+
+#copyright {
+    padding-top: 3em;
 }
