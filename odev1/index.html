@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> -->
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div id="logo" class="flexItem1">
+            <a href="index.html">Logo</a>
+          </div>
+          <div class="flexItem2">
+            <div id="search-icon" class="material-icons">search</div>
+            <div id="search-input">
+              <input type="search" placeholder="Search..." />
+            </div>
+            <div id="search-mic" class="material-icons">mic</div>
+          </div>
+          <a href="index.html" class="navLink flexItem3 material-icons"
+            >home
+            <span>Home</span>
+          </a>
+          <a href="index.html" class="navLink flexItem4 material-icons"
+            >info
+            <span> About</span>
+          </a>
+          <a href="index.html" class="navLink flexItem5 material-icons"
+            >call
+            <span>Contact</span>
+          </a>
+          <a href="index.html" class="navLink flexItem6 material-icons"
+            >quiz
+            <span>FAQ</span>
+          </a>
+        </nav>
+      </header>
+
+      <div id="hamburger-menu">
+        <button class="material-icons">menu</button>
+      </div>
+      <section id="sidebar">
+        <nav id="sidebar-nav">
+            <ul>
+                <li>Lorem.</li>
+                <li>Voluptatum!</li>
+                <li>Quod.</li>
+                <li>Provident.</li>
+                <li>Aut.</li>
+            </ul>
+        </nav>
+      </section>
+
+      <section>
+        <article>
+          <div id="main-content">
+            <h1>My Site</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              animi consequuntur sint nesciunt. Illum quisquam accusantium
+              impedit, error deserunt culpa quidem sit expedita tempora! Autem
+              corrupti minima blanditiis quam. Officiis sit tenetur natus,
+              perspiciatis dolores cum obcaecati earum id. Tempore illum
+              delectus voluptate magnam et expedita vero inventore assumenda
+              laborum.
+            </p>
+            <p>
+              Excepturi nemo reiciendis ut repellendus molestias ipsum vero
+              iusto corrupti reprehenderit. Soluta explicabo pariatur similique
+              aspernatur repellat voluptatem, assumenda harum, recusandae, illo
+              illum incidunt quo. Mollitia est eos doloribus fugiat a nostrum
+              quibusdam natus unde harum fugit. Voluptate, consectetur, itaque
+              blanditiis debitis quam temporibus voluptatem deserunt id quo,
+              aliquid in?
+            </p>
+            <p>
+              Reiciendis ab delectus dicta natus eos dignissimos praesentium,
+              inventore earum nisi libero impedit quis voluptatibus ullam! Dicta
+              excepturi tenetur similique placeat voluptates quam animi ipsa,
+              doloribus aspernatur voluptate asperiores corporis. Iusto tempore,
+              odio fuga a tenetur pariatur sunt voluptates earum modi voluptatum
+              necessitatibus deserunt temporibus in delectus illum quae ipsam.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <h1 id="images-header">Images</h1>
+
+          <div id="image-gallery">
+            <div class="image">
+              <div class="layer">
+                  <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
+              </div>
+              <img
+                src="images/daniel-lincoln-WWiZtqGm8yg-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image">
+                <div class="layer">
+                    <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
+                </div>
+              <img
+                src="images/mary-skrynnikova-jT836lYfGHQ-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="image">
+                <div class="layer">
+                    <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
+                </div>
+              <img src="images/paulo-freitas-9NqZBHUuYIc-unsplash.jpg" alt="" />
+            </div>
+            <div class="image">
+                <div class="layer">
+                    <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
+                </div>
+              <img
+                src="images/severin-candrian-1bpKLGeqPA8-unsplash.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div>social media</div>
+        <div>Copyright</div>
+      </footer>
+    </main>
+
+    <script>
+        let button = document.getElementById('hamburger-menu');
+        let sidebar = document.getElementById('sidebar');
+        button.onclick = () => {
+            if(sidebar.style.display === 'none') {
+                sidebar.style.display = 'block';
+            }
+            else {
+                sidebar.style.display = 'none';
+            }
+        };
+    </script>
+  </body>
+</html>
