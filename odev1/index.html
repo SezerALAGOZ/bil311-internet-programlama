@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    /> -->
   </head>
 
   <body>
@@ -45,18 +41,18 @@
         </nav>
       </header>
 
-      <div id="hamburger-menu">
-        <button class="material-icons">menu</button>
-      </div>
-      <section id="sidebar">
-        <nav id="sidebar-nav">
-            <ul>
-                <li>Lorem.</li>
-                <li>Voluptatum!</li>
-                <li>Quod.</li>
-                <li>Provident.</li>
-                <li>Aut.</li>
-            </ul>
+      <section id="sidebar-area">
+        <h4>Duyurular <br />için <br />tıkla...</h4>
+        <div id="hamburger-menu" style="background-image: url('images/outline_menu_black_24dp.png');">
+        </div>
+        <nav id="sidebar" style="display: none;">
+          <ul class="sidebar-links">
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Lorem ipsum</a></li>
+            <li><a href="">Lorem ipsum dolor</a></li>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Lorem ipsum</a></li>
+          </ul>
         </nav>
       </section>
 
@@ -99,7 +95,9 @@
           <div id="image-gallery">
             <div class="image">
               <div class="layer">
-                  <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
+                <a href="#" class="material-icons favorite"
+                  >favorite<span>Beğen</span></a
+                >
               </div>
               <img
                 src="images/daniel-lincoln-WWiZtqGm8yg-unsplash.jpg"
@@ -107,24 +105,30 @@
               />
             </div>
             <div class="image">
-                <div class="layer">
-                    <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
-                </div>
+              <div class="layer">
+                <a href="#" class="material-icons favorite"
+                  >favorite<span>Beğen</span></a
+                >
+              </div>
               <img
                 src="images/mary-skrynnikova-jT836lYfGHQ-unsplash.jpg"
                 alt=""
               />
             </div>
             <div class="image">
-                <div class="layer">
-                    <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
-                </div>
+              <div class="layer">
+                <a href="#" class="material-icons favorite"
+                  >favorite<span>Beğen</span></a
+                >
+              </div>
               <img src="images/paulo-freitas-9NqZBHUuYIc-unsplash.jpg" alt="" />
             </div>
             <div class="image">
-                <div class="layer">
-                    <a href="#" class="material-icons favorite">favorite<span>Beğen</span></a>
-                </div>
+              <div class="layer">
+                <a href="#" class="material-icons favorite"
+                  >favorite<span>Beğen</span></a
+                >
+              </div>
               <img
                 src="images/severin-candrian-1bpKLGeqPA8-unsplash.jpg"
                 alt=""
@@ -136,21 +140,22 @@
 
       <footer>
         <div>social media</div>
-        <div>Copyright</div>
+        <div> &copy;Copyright - Designed by Sezer Alagöz</div>
       </footer>
     </main>
 
     <script>
-        let button = document.getElementById('hamburger-menu');
-        let sidebar = document.getElementById('sidebar');
-        button.onclick = () => {
-            if(sidebar.style.display === 'none') {
-                sidebar.style.display = 'block';
-            }
-            else {
-                sidebar.style.display = 'none';
-            }
-        };
+      let button = document.getElementById("hamburger-menu");
+      let sidebar = document.getElementById("sidebar");
+      button.onclick = () => {
+        if (sidebar.style.display == "none") {
+          sidebar.style.display = "block";
+          button.style.backgroundImage = "url('images/close.png')"
+        } else {
+          sidebar.style.display = "none";
+          button.style.backgroundImage = "url('images/outline_menu_black_24dp.png')";
+        }
+      }
     </script>
   </body>
 </html>

@@ -39,7 +39,7 @@ nav {
 
 .flexItem2 {
     width: 30%;
-    margin-left: 10%;
+    margin-left: 5%;
     display: flex;
     flex-flow: wrap;
     border: none;
@@ -87,12 +87,46 @@ nav {
     color: #fff;
 }
 
-#sidebar {
-    display: none;
+#sidebar-area {
+    position: fixed;
+    top: 5em;
+    left: 0;
+    z-index: 100;
+}
+
+#hamburger-menu {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #234646c7;
+}
+.sidebar-links li {
+    padding: 0.5em 5em;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    transition: background-color 0.5s ease-in;
+}
+.sidebar-links li:hover {
+    background-color: #000;
+}
+.sidebar-links a {
+    color: #fff;
 }
 
 
 #main-content {
+    margin-top: 20px;
     padding: 20px;
     line-height: 2em;
 }
@@ -142,7 +176,6 @@ nav {
     height: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 100;
     transition: height 1s linear;
     background-color: rgba(58, 61, 58, 0.2);
 }
